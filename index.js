@@ -1,5 +1,5 @@
 var es = require('event-stream');
-var beautify = require('js-beautify').js_beautify;
+var beautify = require('js-beautify');
 
 module.exports = function(opts) {
 

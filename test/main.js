@@ -14,7 +14,7 @@ describe('gulp-jsbeautify', function() {
       contents: new Buffer('function test(){console.log(\'test\');}')
     });
 
-    var expected = jsbeautify.js_beautify(String(fakeFile.contents), {indent_size: 2});
+    var expected = jsbeautify(String(fakeFile.contents), {indent_size: 2});
     stream.on('error', done);
     stream.on('data', function(newFile){
       should.exist(newFile);
