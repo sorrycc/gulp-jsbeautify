@@ -1,0 +1,31 @@
+{
+  "name": "gulp-jsbeautify",
+  "version": "0.1.0",
+  "description": "js-beautify plugin for gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --require should ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/sorrycc/gulp-jsbeautify"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "author": "chencheng <sorrycc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorrycc/gulp-jsbeautify/issues"
+  },
+  "homepage": "https://github.com/sorrycc/gulp-jsbeautify",
+  "dependencies": {
+    "event-stream": "^3.1.5",
+    "gulp-util": "^2.2.16",
+    "js-beautify": "^1.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "should": "^4.0.1"
+  }
+}
