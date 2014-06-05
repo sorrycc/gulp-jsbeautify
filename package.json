@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsbeautify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "js-beautify plugin for gulp",
   "main": "index.js",
   "scripts": {
