@@ -1,9 +1,9 @@
-var es = require('event-stream');
+var through = require('through2');
 var beautify = require('js-beautify');
 
 module.exports = function(opts) {
 
-  return es.map(function(file, cb) {
+  return through.obj(function(file, enc, cb) {
     if (file.isNull()) return cb(null, file); // pass along
     if (file.isStream()) return cb(new Error('gulp-jsbeautify: Streaming not supported'));
 

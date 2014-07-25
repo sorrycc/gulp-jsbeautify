@@ -1,10 +1,10 @@
 {
   "name": "gulp-jsbeautify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "js-beautify plugin for gulp",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --require should ./test/"
+    "test": "./node_modules/.bin/mocha --reporter spec --require should ./test.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/sorrycc/gulp-jsbeautify",
   "dependencies": {
-    "event-stream": "^3.1.5",
-    "js-beautify": "^1.5.1"
+    "js-beautify": "^1.5.1",
+    "through2": "^0.5.1"
   },
   "devDependencies": {
     "gulp-util": "^2.2.16",
