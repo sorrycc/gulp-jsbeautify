@@ -19,7 +19,7 @@ var beautify = require('gulp-jsbeautify');
 
 gulp.task('beautify', function() {
   gulp.src('./src/*.js')
-    .pipe(beautify({indentSize: 2}))
+    .pipe(beautify({indent_size: 2}))
     .pipe(gulp.dest('./build/'));
 });
 ```
